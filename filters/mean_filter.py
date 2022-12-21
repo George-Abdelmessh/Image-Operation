@@ -30,5 +30,12 @@ class MeanFilter:
 
         # Convert matrix to image
         self.img = Image.fromarray(self.img_new)
+        # Save image
+        self.save = input("Do You Need To Save the New Image (Y/N): ")
+        if self.save.lower() == 'y':
+            if self.img.mode != 'RGB':
+                self.img_name = input("Enter Image Name: ")
+                self.new_img =self.img.convert('RGB')
+                self.new_img.save(f'{self.img_name}.jpg')
         # Show the new image
         self.img.show()

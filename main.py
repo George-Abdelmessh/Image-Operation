@@ -24,7 +24,6 @@ def main():
             print('Invalid Option Try Agine!')
     
 
-
 def bordered(text):
     lines = text.splitlines()
     width = max(len(s) for s in lines)
