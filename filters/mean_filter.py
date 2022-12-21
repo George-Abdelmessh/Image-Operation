@@ -29,7 +29,8 @@ class MeanFilter:
                 self.img_new[i, j] = temp
 
         # Convert matrix to image
-        self.img = Image.fromarray(self.img_new)
+        self.img_new1 = self.img_new.astype(np.uint8)
+        self.img = Image.fromarray(self.img_new1)
         # Save image
         self.save = input("Do You Need To Save the New Image (Y/N): ")
         if self.save.lower() == 'y':
