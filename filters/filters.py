@@ -2,6 +2,7 @@ from mean_filter import MeanFilter
 from median_filter import MedianFilter
 from gaussian_filter import GaussianFilter
 from laplacian_filter import LaplacianFilter
+from unsharp_filter import UnsharpFilter
 
 class Filters:
     def __init__(self):
@@ -47,6 +48,7 @@ class Filters:
             lp = LaplacianFilter(self.img)
             lp.apply_filter()
         elif self.option  == 5:
-            pass
+            un = UnsharpFilter(self.img)
+            un.apply_filter()
         else:
             print("Something Went Wrong, Please Try Agine!")
