@@ -1,5 +1,6 @@
 from mean_filter import MeanFilter
 from median_filter import MedianFilter
+from gaussian import GaussianFilter
 
 class Filters:
     def __init__(self):
@@ -39,7 +40,8 @@ class Filters:
             md = MedianFilter(self.img)
             md.apply_filter()
         elif self.option  == 3:
-            pass
+            ga = GaussianFilter(self.img)
+            ga.apply_filter()
         elif self.option  == 4:
             pass
         elif self.option  == 5:
