@@ -1,4 +1,5 @@
 from mean_filter import MeanFilter
+from median_filter import MedianFilter
 
 class Filters:
     def __init__(self):
@@ -35,7 +36,8 @@ class Filters:
             mn = MeanFilter(self.img)
             mn.apply_filter()
         elif self.option  == 2:
-            pass
+            md = MedianFilter(self.img)
+            md.apply_filter()
         elif self.option  == 3:
             pass
         elif self.option  == 4:
