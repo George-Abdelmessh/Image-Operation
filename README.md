@@ -1,4 +1,4 @@
-# Image-Arithemtic
+# Image-Operation
 
 An Image Processing Project, To apply some filters and arithmetic operations.
 
