@@ -19,7 +19,7 @@ class GaussianFilter:
                                     [1, 4, 6, 4, 1]]) / 256
 
         # Apply Gaussian filter
-        gaussian_filtered = convolve(self.img, gaussian_kernel, mode="reflect")
+        gaussian_filtered = convolve(self.img, gaussian_kernel)
 
         # show result images
         self.img1 = Image.fromarray(gaussian_filtered)

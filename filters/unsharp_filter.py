@@ -19,7 +19,7 @@ class UnsharpFilter:
                                 [1, 4, 6, 4, 1]]) / 256
 
     # Apply Gaussian filter
-    gaussian_filtered = convolve(self.img, gaussian_kernel, mode="reflect")
+    gaussian_filtered = convolve(self.img, gaussian_kernel)
 
     # Apply unsharp filter
     self.unsharp_filtered = self.img + self.img - gaussian_filtered

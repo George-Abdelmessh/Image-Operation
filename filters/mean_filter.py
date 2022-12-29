@@ -14,7 +14,7 @@ class MeanFilter:
         # Define the mean filter kernel
         mean_kernel = np.ones((5, 5)) / 25
         # Apply mean filter
-        mean_filtered = convolve(self.img, mean_kernel, mode="reflect")
+        mean_filtered = convolve(self.img, mean_kernel)
         # Convert matrix to image
         self.img = Image.fromarray(mean_filtered)
         # Save image

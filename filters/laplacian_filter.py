@@ -16,7 +16,7 @@ class LaplacianFilter:
                                     [1, -4, 1],
                                     [0, 1, 0]])
         # Apply Laplacian filter
-        self.laplacian_filtered = convolve(self.img, self.laplacian_kernel, mode="reflect")
+        self.laplacian_filtered = convolve(self.img, self.laplacian_kernel)
         # Convert Array To An Image
         self.img = Image.fromarray(self.laplacian_filtered)
         # Save image
